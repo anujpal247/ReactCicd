@@ -22,5 +22,8 @@ jobs:
       - name: "clone the repo"
         uses: actions/checkout@v4
 
+      - name: "check npm version"
+        run: npm -v
+        
       - name: "Install dependencies"
         run: npm install
