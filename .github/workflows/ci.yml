@@ -24,6 +24,9 @@ jobs:
 
       - name: "check npm version"
         run: npm -v
-        
+      
+      - name: "install latest npm"
+        run: npm install -g npm@latest
+
       - name: "Install dependencies"
         run: npm install
